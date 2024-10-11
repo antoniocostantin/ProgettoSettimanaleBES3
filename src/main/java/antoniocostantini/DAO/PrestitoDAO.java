@@ -10,6 +10,7 @@ import jakarta.persistence.TypedQuery;
 
 
 import java.util.List;
+import java.util.Objects;
 import java.util.UUID;
 
 public class PrestitoDAO {
@@ -20,11 +21,22 @@ public class PrestitoDAO {
     }
 
     public void save(Prestito prestito) {
-        EntityTransaction transaction = entityManager.getTransaction();
-        transaction.begin();
-        entityManager.persist(prestito);
-        transaction.commit();
-        System.out.println("Prestito" + prestito.getUser() + " saved");
+        if (isSospeso(prestito)) {
+            EntityTransaction transaction = entityManager.getTransaction();
+            transaction.begin();
+            entityManager.persist(prestito);
+            transaction.commit();
+            System.out.println("Prestito" + prestito.getUser() + " saved");
+        } else System.out.println("Prestito" + prestito.getUser() + " not saved");
+    }
+
+    public boolean isSospeso(Prestito prestito) {
+        TypedQuery<Prestito> query = entityManager.createQuery("SELECT p FROM Prestito p WHERE p.data_fine_prevista <= local date or p.data_fine_effettiva IS NULL ", Prestito.class);
+        List<Prestito> prestiti = query.getResultList().stream().filter(p -> Objects.equals(p.getUser().getNumero_tessera(), prestito.getUser().getNumero_tessera())).toList();
+        System.out.println("-----------------------------------------");
+        prestiti.forEach(System.out::println);
+        return prestiti.isEmpty();
+
     }
 
     public Prestito findById(String id) {

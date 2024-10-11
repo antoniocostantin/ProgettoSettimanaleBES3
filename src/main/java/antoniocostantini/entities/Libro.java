@@ -26,8 +26,8 @@ public class Libro extends Publicazione {
     @Override
     public String toString() {
         return "Libro{" +
-                "genere='" + genere + '\'' +
-                ", autore='" + autore + '\'' +
+                "autore='" + autore + '\'' +
+                ", genere='" + genere + '\'' +
                 "} " + super.toString();
     }
 

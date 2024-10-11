@@ -8,13 +8,6 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name = "riviste")
 public class Rivista extends Publicazione {
-    @Override
-    public String toString() {
-        return "Rivista{" +
-                "periodicità=" + periodicità +
-                "} " + super.toString();
-    }
-
     @Enumerated(EnumType.STRING)
     private Periodicità periodicità;
 
@@ -29,6 +22,13 @@ public class Rivista extends Publicazione {
 
     public void setPeriodicità(Periodicità periodicità) {
         this.periodicità = periodicità;
+    }
+
+    @Override
+    public String toString() {
+        return "Rivista{" +
+                "periodicità=" + periodicità +
+                "} " + super.toString();
     }
 
     public Rivista() {

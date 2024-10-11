@@ -23,10 +23,10 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-                "nome='" + nome + '\'' +
+                "numero_tessera=" + numero_tessera +
+                ", nome='" + nome + '\'' +
                 ", cognome='" + cognome + '\'' +
                 ", data_nascita=" + data_nascita +
-                ", numero_tessera=" + numero_tessera +
                 '}';
     }
 

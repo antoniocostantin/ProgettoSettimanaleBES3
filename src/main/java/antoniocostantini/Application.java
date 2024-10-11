@@ -14,6 +14,9 @@ public class Application {
     private static final EntityManagerFactory emf = Persistence.createEntityManagerFactory("catalogobibliografico");
 
     public static void main(String[] args) {
+
+        //Ho optato per un doppio manytoone perchè ho immaginato che un utente possa fare più prestiti
+        // magari con una gestione del salvataggio del prestito che controlla se ha prestiti in sospeso
         EntityManager em = emf.createEntityManager();
 
         PublicazioneDAO pdao = new PublicazioneDAO(em);
@@ -31,14 +34,15 @@ public class Application {
 //        list.add(lib);
 //        list.add(lib2);
 //        list.add(riv);
-        User us = new User("nomex", "weuifdu", LocalDate.of(1448,8,2));
-        udao.save(us);
-        User usFromDb = udao.getByID(3L);
-        Rivista rivDb = pdao.getRivista("20871c5c-4ece-48c2-9746-3539c8dd845f");
 
-        Prestito pre = new Prestito(LocalDate.of(1999,11,23),usFromDb,rivDb);
-        pre.setData_fine_effettiva(LocalDate.of(2024,11,4));
-
+//        User user = udao.getByID(1L);
+//        Libro lib = new Libro("titolone", 2012, 54, "simpson", "nn so che dirti");
+//        pdao.save(lib);
+//        pdao.findByTitolo("titolone");
+//
+//        Prestito prestito = new Prestito(LocalDate.now().plusDays(34), user ,pdao.findByTitolo("titolone").getFirst());
+//
+//        prdao.save(prestito);
 //       prdao.save(pre);
 //
 //        udao.save(us);
@@ -47,10 +51,17 @@ public class Application {
 //        prdao.save(prest);
         //        pdao.save(lib);
 
+//        User us = new User("nomino", "mimino", LocalDate.of(1967,12,4));
+////        udao.save(us);
+//
+//        User user = udao.getByID(3L);
+//        Publicazione pub = pdao.getPublicazione("648bd610-de0b-401a-845c-37893a161f11");
+//
+//        Prestito prestito = new Prestito(LocalDate.now(),user, pub);
+//        prdao.save(prestito);
 
-
-        prdao.getByUserId(3L).forEach(System.out::println);
-        prdao.findScaduti().forEach(System.out::println);
+//        prdao.getByUserId(3L).forEach(System.out::println);
+//        prdao.findNonRestituito().forEach(System.out::println);
 
         em.close();
         emf.close();

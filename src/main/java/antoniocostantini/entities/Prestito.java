@@ -34,12 +34,12 @@ public class Prestito {
     @Override
     public String toString() {
         return "Prestito{" +
-                "data_fine_prevista=" + data_fine_prevista +
+                "id=" + id +
+                ", data_inizio=" + data_inizio +
+                ", data_fine_prevista=" + data_fine_prevista +
                 ", data_fine_effettiva=" + data_fine_effettiva +
                 ", user=" + user +
                 ", publicazione=" + publicazione +
-                ", data_inizio=" + data_inizio +
-                ", id=" + id +
                 '}';
     }
 
