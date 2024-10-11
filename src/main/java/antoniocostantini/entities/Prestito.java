@@ -19,15 +19,16 @@ public class Prestito {
     private LocalDate data_fine_effettiva;
     @ManyToOne
     private User user;
-    @ManyToMany(mappedBy = "inprestito")
-    private List<Publicazione> publicazioniprestate = new ArrayList<>();
+    @ManyToOne
+    @JoinColumn(name = "publicazione_id")
+    private Publicazione publicazione ;
 
 
-    public Prestito(LocalDate data_inizio, User user, List<Publicazione> publicazioniprestate) {
+    public Prestito(LocalDate data_inizio, User user, Publicazione publicazione) {
         this.data_inizio = data_inizio;
         this.data_fine_prevista = data_inizio.plusDays(30);
         this.user = user;
-        this.publicazioniprestate = publicazioniprestate;
+        this.publicazione = publicazione;
     }
 
     @Override
@@ -36,7 +37,7 @@ public class Prestito {
                 "data_fine_prevista=" + data_fine_prevista +
                 ", data_fine_effettiva=" + data_fine_effettiva +
                 ", user=" + user +
-                ", publicazioniprestate=" + publicazioniprestate +
+                ", publicazione=" + publicazione +
                 ", data_inizio=" + data_inizio +
                 ", id=" + id +
                 '}';
@@ -70,12 +71,12 @@ public class Prestito {
         this.data_fine_effettiva = data_fine_effettiva;
     }
 
-    public List<Publicazione> getPublicazioniprestate() {
-        return publicazioniprestate;
+    public Publicazione getPublicazione() {
+        return publicazione;
     }
 
-    public void setPublicazioniprestate(List<Publicazione> publicazioniprestate) {
-        this.publicazioniprestate = publicazioniprestate;
+    public void setPublicazioniprestate(Publicazione publicazioniprestate) {
+        this.publicazione = publicazioniprestate;
     }
 
     public User getUser() {

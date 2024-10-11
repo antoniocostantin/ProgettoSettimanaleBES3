@@ -16,10 +16,7 @@ public abstract class Publicazione {
     private String titolo;
     private int anno_publicazione;
     private int n_pagine;
-    @ManyToMany
-    @JoinTable(name = "prestito_publicazione",
-        joinColumns = @JoinColumn(name = "publicazione_isbn", nullable = true),
-        inverseJoinColumns = @JoinColumn(name = "prestito_id"))
+    @OneToMany(mappedBy = "publicazione")
     private List<Prestito> inprestito = new ArrayList<>();
 
 

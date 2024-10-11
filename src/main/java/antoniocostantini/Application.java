@@ -32,6 +32,11 @@ public class Application {
 //        list.add(lib2);
 //        list.add(riv);
 //
+        User usFromDb = udao.getByID(2L);
+        Rivista rivDb = pdao.getRivista("20871c5c-4ece-48c2-9746-3539c8dd845f");
+
+        Prestito pre = new Prestito(LocalDate.now(),usFromDb,rivDb);
+        prdao.save(pre);
 //        User us = new User("nome", "cognome", LocalDate.of(1978,3,12));
 //
 //        udao.save(us);
@@ -41,7 +46,6 @@ public class Application {
         //        pdao.save(lib);
 
 
-        System.out.println(pdao.getPublicazione("2ce94ce7-84b3-4a24-b224-a16f507b4177"));
 
         prdao.getByUserId(2L).forEach(System.out::println);
 

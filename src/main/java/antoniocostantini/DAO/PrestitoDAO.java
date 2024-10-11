@@ -34,7 +34,7 @@ public class PrestitoDAO {
     }
 
     public List<Publicazione> getByUserId(Long userId) {
-        TypedQuery<Publicazione> query = entityManager.createQuery("SELECT p.publicazioniprestate FROM Prestito p WHERE p.user.numero_tessera = :userId ", Publicazione.class);
+        TypedQuery<Publicazione> query = entityManager.createQuery("SELECT p.publicazione FROM Prestito p WHERE p.user.numero_tessera = :userId ", Publicazione.class);
         query.setParameter("userId", userId);
         return query.getResultList();
     }

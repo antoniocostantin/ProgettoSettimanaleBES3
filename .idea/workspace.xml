@@ -4,20 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34f20ee1-696f-4c0a-8554-f04b78e1ac49" name="Changes" comment="c">
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/antoniocostantini/DAO/PrestitoDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/antoniocostantini/DAO/PublicazioneDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/antoniocostantini/DAO/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/antoniocostantini/exceptions/NotFoundExceptionNotUUID.java" afterDir="false" />
+    <list default="true" id="34f20ee1-696f-4c0a-8554-f04b78e1ac49" name="Changes" comment="cee">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/antoniocostantini/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/antoniocostantini/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/antoniocostantini/entities/Libro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/antoniocostantini/entities/Libro.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/antoniocostantini/entities/Prestito.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/antoniocostantini/entities/Prestito.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/antoniocostantini/entities/Publicazione.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/antoniocostantini/entities/Publicazione.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/antoniocostantini/entities/Rivista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/antoniocostantini/entities/Rivista.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/antoniocostantini/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/antoniocostantini/entities/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +71,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1728636013287</updated>
-      <workItem from="1728636014154" duration="18196000" />
+      <workItem from="1728636014154" duration="19462000" />
     </task>
     <task id="LOCAL-00001" summary="c">
       <option name="closed" value="true" />
@@ -90,7 +81,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728646981593</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="cee">
+      <option name="closed" value="true" />
+      <created>1728656361252</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728656361252</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,7 +97,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="c" />
-    <option name="LAST_COMMIT_MESSAGE" value="c" />
+    <MESSAGE value="cee" />
+    <option name="LAST_COMMIT_MESSAGE" value="cee" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
