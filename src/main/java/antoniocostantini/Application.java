@@ -3,12 +3,9 @@ package antoniocostantini;
 import antoniocostantini.DAO.PrestitoDAO;
 import antoniocostantini.DAO.PublicazioneDAO;
 import antoniocostantini.DAO.UserDAO;
-import antoniocostantini.entities.*;
+
 import jakarta.persistence.*;
 
-import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Application {
     private static final EntityManagerFactory emf = Persistence.createEntityManagerFactory("catalogobibliografico");
