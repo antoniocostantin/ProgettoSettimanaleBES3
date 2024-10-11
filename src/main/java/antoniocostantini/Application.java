@@ -52,15 +52,16 @@ public class Application {
         //        pdao.save(lib);
 
 //        User us = new User("nomino", "mimino", LocalDate.of(1967,12,4));
-////        udao.save(us);
+//       udao.save(us);
 //
-//        User user = udao.getByID(3L);
-//        Publicazione pub = pdao.getPublicazione("648bd610-de0b-401a-845c-37893a161f11");
+//        User user = udao.getByID(2L);
 //
-//        Prestito prestito = new Prestito(LocalDate.now(),user, pub);
+//        Publicazione pub = pdao.getPublicazione("ad417178-0063-466c-be60-da90b14bbc27");
+//
+//        Prestito prestito = new Prestito(LocalDate.now(), user, pub);
 //        prdao.save(prestito);
-
-//        prdao.getByUserId(3L).forEach(System.out::println);
+//
+//        prdao.getByUserId(2L).forEach(System.out::println);
 //        prdao.findNonRestituito().forEach(System.out::println);
 
         em.close();

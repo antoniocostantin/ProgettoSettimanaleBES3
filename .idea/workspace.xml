@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34f20ee1-696f-4c0a-8554-f04b78e1ac49" name="Changes" comment="here">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="34f20ee1-696f-4c0a-8554-f04b78e1ac49" name="Changes" comment="meglio de prima">
       <change beforePath="$PROJECT_DIR$/src/main/java/antoniocostantini/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/antoniocostantini/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/antoniocostantini/DAO/PrestitoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/antoniocostantini/DAO/PrestitoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/antoniocostantini/entities/Libro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/antoniocostantini/entities/Libro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/antoniocostantini/entities/Prestito.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/antoniocostantini/entities/Prestito.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/antoniocostantini/entities/Rivista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/antoniocostantini/entities/Rivista.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/antoniocostantini/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/antoniocostantini/entities/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +68,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1728636013287</updated>
-      <workItem from="1728636014154" duration="23612000" />
+      <workItem from="1728636014154" duration="23954000" />
     </task>
     <task id="LOCAL-00001" summary="c">
       <option name="closed" value="true" />
@@ -108,7 +102,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728658758034</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="meglio de prima">
+      <option name="closed" value="true" />
+      <created>1728661946006</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1728661946006</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,7 +121,8 @@
     <MESSAGE value="cee" />
     <MESSAGE value="almost here" />
     <MESSAGE value="here" />
-    <option name="LAST_COMMIT_MESSAGE" value="here" />
+    <MESSAGE value="meglio de prima" />
+    <option name="LAST_COMMIT_MESSAGE" value="meglio de prima" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
