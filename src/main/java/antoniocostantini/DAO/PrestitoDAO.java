@@ -39,4 +39,14 @@ public class PrestitoDAO {
         return query.getResultList();
     }
 
+    public List<Prestito> findScaduti() {
+        TypedQuery<Prestito> query = entityManager.createQuery("SELECT p FROM Prestito p where p.data_fine_prevista <= local date ", Prestito.class);
+        return query.getResultList();
+    }
+
+    public List<Prestito> findNonRestituito(){
+        TypedQuery<Prestito> query = entityManager.createQuery("SELECT p FROM Prestito p where p.data_fine_effettiva IS NULL ", Prestito.class);
+        return query.getResultList();
+    }
+
 }

@@ -31,13 +31,15 @@ public class Application {
 //        list.add(lib);
 //        list.add(lib2);
 //        list.add(riv);
-//
-        User usFromDb = udao.getByID(2L);
+        User us = new User("nomex", "weuifdu", LocalDate.of(1448,8,2));
+        udao.save(us);
+        User usFromDb = udao.getByID(3L);
         Rivista rivDb = pdao.getRivista("20871c5c-4ece-48c2-9746-3539c8dd845f");
 
-        Prestito pre = new Prestito(LocalDate.now(),usFromDb,rivDb);
-        prdao.save(pre);
-//        User us = new User("nome", "cognome", LocalDate.of(1978,3,12));
+        Prestito pre = new Prestito(LocalDate.of(1999,11,23),usFromDb,rivDb);
+        pre.setData_fine_effettiva(LocalDate.of(2024,11,4));
+
+//       prdao.save(pre);
 //
 //        udao.save(us);
 //
@@ -47,7 +49,8 @@ public class Application {
 
 
 
-        prdao.getByUserId(2L).forEach(System.out::println);
+        prdao.getByUserId(3L).forEach(System.out::println);
+        prdao.findScaduti().forEach(System.out::println);
 
         em.close();
         emf.close();
