@@ -7,20 +7,27 @@ import java.util.List;
 import java.util.UUID;
 
 @Entity
-@Inheritance(strategy = InheritanceType.JOINED)
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 @Table(name = "publicazioni")
 public abstract class Publicazione {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue
     private UUID ISBN;
     private String titolo;
     private int anno_publicazione;
     private int n_pagine;
     @ManyToMany
     @JoinTable(name = "prestito_publicazione",
-        joinColumns = @JoinColumn(name = "publicazione_isbn"),
+        joinColumns = @JoinColumn(name = "publicazione_isbn", nullable = true),
         inverseJoinColumns = @JoinColumn(name = "prestito_id"))
     private List<Prestito> inprestito = new ArrayList<>();
+
+
+    public Publicazione(String titolo, int anno_publicazione, int n_pagine) {
+        this.titolo = titolo;
+        this.anno_publicazione = anno_publicazione;
+        this.n_pagine = n_pagine;
+    }
 
     public Publicazione() {
     }

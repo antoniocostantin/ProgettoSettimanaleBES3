@@ -8,20 +8,39 @@ import java.util.List;
 import java.util.UUID;
 
 @Entity
+@Table(name = "prestiti")
 public class Prestito {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue
     private UUID id;
 
     private LocalDate data_inizio;
     private LocalDate data_fine_prevista;
     private LocalDate data_fine_effettiva;
+    @ManyToOne
+    private User user;
     @ManyToMany(mappedBy = "inprestito")
     private List<Publicazione> publicazioniprestate = new ArrayList<>();
 
-    @ManyToOne
-    private User user;
 
+    public Prestito(LocalDate data_inizio, User user, List<Publicazione> publicazioniprestate) {
+        this.data_inizio = data_inizio;
+        this.data_fine_prevista = data_inizio.plusDays(30);
+        this.user = user;
+        this.publicazioniprestate = publicazioniprestate;
+    }
+
+    @Override
+    public String toString() {
+        return "Prestito{" +
+                "data_fine_prevista=" + data_fine_prevista +
+                ", data_fine_effettiva=" + data_fine_effettiva +
+                ", user=" + user +
+                ", publicazioniprestate=" + publicazioniprestate +
+                ", data_inizio=" + data_inizio +
+                ", id=" + id +
+                '}';
+    }
 
     public Prestito() {
     }

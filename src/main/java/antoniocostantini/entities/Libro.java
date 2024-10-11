@@ -9,15 +9,26 @@ public class Libro extends Publicazione {
     private String autore;
     private String genere;
 
+    public Libro(String titolo, int anno_publicazione, int n_pagine, String autore, String genere) {
+        super(titolo, anno_publicazione, n_pagine);
+        this.autore = autore;
+        this.genere = genere;
+    }
+
+    public Libro(String autore, String genere) {
+        this.autore = autore;
+        this.genere = genere;
+    }
+
     public Libro() {
     }
 
     @Override
     public String toString() {
         return "Libro{" +
-                "autore='" + autore + '\'' +
-                ", genere='" + genere + '\'' +
-                '}';
+                "genere='" + genere + '\'' +
+                ", autore='" + autore + '\'' +
+                "} " + super.toString();
     }
 
     public String getGenere() {

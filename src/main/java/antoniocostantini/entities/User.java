@@ -6,6 +6,8 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+@Entity
+@Table(name = "users")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -29,6 +31,12 @@ public class User {
     }
 
     public User() {
+    }
+
+    public User(String nome, String cognome, LocalDate data_nascita) {
+        this.nome = nome;
+        this.cognome = cognome;
+        this.data_nascita = data_nascita;
     }
 
     public String getNome() {

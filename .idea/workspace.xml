@@ -4,23 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34f20ee1-696f-4c0a-8554-f04b78e1ac49" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_blame.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/antoniocostantini/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/antoniocostantini/entities/Libro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/antoniocostantini/entities/Periodicità.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/antoniocostantini/entities/Prestito.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/antoniocostantini/entities/Publicazione.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/antoniocostantini/entities/Rivista.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/antoniocostantini/entities/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/antoniocostantini/ApplicationTest.java" afterDir="false" />
+    <list default="true" id="34f20ee1-696f-4c0a-8554-f04b78e1ac49" name="Changes" comment="c">
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/antoniocostantini/DAO/PrestitoDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/antoniocostantini/DAO/PublicazioneDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/antoniocostantini/DAO/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/antoniocostantini/exceptions/NotFoundExceptionNotUUID.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/antoniocostantini/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/antoniocostantini/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/antoniocostantini/entities/Libro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/antoniocostantini/entities/Libro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/antoniocostantini/entities/Prestito.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/antoniocostantini/entities/Prestito.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/antoniocostantini/entities/Publicazione.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/antoniocostantini/entities/Publicazione.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/antoniocostantini/entities/Rivista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/antoniocostantini/entities/Rivista.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/antoniocostantini/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/antoniocostantini/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +35,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "antoniocostantin"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/antoniocostantin/ProgettoSettimanaleBES3.git",
+    "accountId": "724261c1-ee15-4109-96e6-1dfc7da89fd4"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -47,21 +56,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Application.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -70,11 +80,34 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1728636013287</updated>
-      <workItem from="1728636014154" duration="9009000" />
+      <workItem from="1728636014154" duration="18196000" />
     </task>
+    <task id="LOCAL-00001" summary="c">
+      <option name="closed" value="true" />
+      <created>1728646981593</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1728646981593</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="c" />
+    <option name="LAST_COMMIT_MESSAGE" value="c" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" log-message="true" type="java-exception">
+          <properties class="jakarta.persistence.PersistenceException" package="jakarta.persistence" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
